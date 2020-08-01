@@ -36,7 +36,7 @@ const unleashDog= function(dogName, dogBreed)
 
 const routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 function exerciseDog(dogName,dogBreed){
-   return routine.map(dog,breed);
+   return routine.map((x)=>x(dog,breed));
 }
 
 exerciseDog('Byron','poodle') ;
